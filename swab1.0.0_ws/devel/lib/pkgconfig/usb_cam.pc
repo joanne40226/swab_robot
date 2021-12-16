@@ -1,0 +1,8 @@
+prefix=/home/user0001/swab1.0.0_ws/devel
+
+Name: usb_cam
+Description: Description of usb_cam
+Version: 0.3.6
+Cflags: -I/home/user0001/swab1.0.0_ws/src/swab-ros-main/usb_cam/include
+Libs: -L${prefix}/lib -lusb_cam
+Requires: 

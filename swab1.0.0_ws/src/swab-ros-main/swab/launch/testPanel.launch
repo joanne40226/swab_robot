@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="stick" pkg="panel" type="sticks.py" output="screen">  
+  </node>
+  <node name="button" pkg="panel" type="button.py" output="screen">  
+  </node>
+
+  <node name="panel_info_process" pkg="swab" type="panel_info.py" output="screen">
+  </node>  
+  <node name="http_lai" pkg="swab" type="http_lai.py" output="screen">
+  </node> 
+
+</launch>

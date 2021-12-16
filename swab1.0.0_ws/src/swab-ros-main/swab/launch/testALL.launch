@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!--
+    this file will launch all node at one command 
+    roslaunch swab testALL.launch
+-->
+
+<launch>
+
+    <node name="stick" pkg="panel" type="sticks.py" output="screen">  
+    </node>
+    <node name="button" pkg="panel" type="button.py" output="screen">  
+    </node>
+    <node name="tof" pkg="tof" type="tof_talker.py" output="screen">  
+    </node>
+
+    <node name="panel_info_process" pkg="swab" type="panel_info.py" output="screen">
+    </node>  
+    <node name="http_lai" pkg="swab" type="http_lai.py" output="screen">
+    </node> 
+
+    <node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+        <param name="video_device" value="/dev/video1" />
+        <param name="image_width" value="640" />
+        <param name="image_height" value="480" />
+        <param name="pixel_format" value="yuyv" />
+        <param name="camera_frame_id" value="usb_cam" />
+        <param name="io_method" value="mmap"/>
+    </node>
+
+    <node name="cameraGUI" pkg="camcam" type="camcam.py" output="screen">
+    </node>
+
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/user0001/swab1.0.0_ws/install
+
+Name: swab_button
+Description: Description of swab_button
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

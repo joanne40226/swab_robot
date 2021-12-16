@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+
+  <node name="button" pkg="panel" type="button.py" output="screen">  
+  </node>
+
+  <node name="panel_info_process" pkg="swab" type="panel_info.py" output="screen">
+  </node>  
+
+
+</launch>

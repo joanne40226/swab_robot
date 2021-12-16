@@ -1,0 +1,2 @@
+swab-ros-main/camcam:swab-ros-main/grid_button:swab-ros-main/swab:swab-ros-main/swab_button:swab-ros-main/usb_cam
+-DCATKIN_DEVEL_PREFIX=/home/user0001/swab1.0.0_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user0001/swab1.0.0_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/user0001/swab1.0.0_ws/devel
+
+Name: swab
+Description: Description of swab
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
